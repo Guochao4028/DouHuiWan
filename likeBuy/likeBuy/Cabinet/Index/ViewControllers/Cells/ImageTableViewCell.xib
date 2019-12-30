@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="ImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0YuanBanner" translatesAutoresizingMaskIntoConstraints="NO" id="g5U-ec-KEH">
+                        <rect key="frame" x="20" y="0.0" width="280" height="80"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g5U-ec-KEH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7hU-X1-iwe"/>
+                    <constraint firstAttribute="trailing" secondItem="g5U-ec-KEH" secondAttribute="trailing" constant="20" id="KPt-DJ-56B"/>
+                    <constraint firstItem="g5U-ec-KEH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cys-6b-FlV"/>
+                    <constraint firstItem="g5U-ec-KEH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="e8t-Xq-Jzo"/>
+                    <constraint firstAttribute="bottom" secondItem="g5U-ec-KEH" secondAttribute="bottom" id="kUe-H9-b2Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="cellImageView" destination="g5U-ec-KEH" id="t56-o8-tf7"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="88.727678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="0YuanBanner" width="517.5" height="129"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+//
+//  LikeBuyPrefixHeader.pch
+//  likeBuy
+//
+//  Created by mac on 2019/9/5.
+//  Copyright © 2019 Beans. All rights reserved.
+//
+
+#ifndef LikeBuyPrefixHeader_pch
+#define LikeBuyPrefixHeader_pch
+
+#import "UIColor+HexColors.h"
+
+#import "MBProgressHUD+WJExtension.h"
+
+#import "MBProgressHUD+JDragon.h"
+
+#import <UINavigationController+FDFullscreenPopGesture.h>
+
+#import "DefinedColors.h"
+
+#import "DefinedEnums.h"
+
+#import "DefineBlocks.h"
+
+#import "DefinedURLs.h"
+
+#import "DefinedKeys.h"
+
+#import "DataManager.h"
+
+#import "WXManager.h"
+
+#import "User.h"
+
+#import <SDWebImage.h>
+
+#import <MJExtension.h>
+
+#import <MJRefresh.h>
+
+#import <WXApi.h>
+
+
+#import <AFNetworking.h>
+
+
+
+
+
+#endif /* LikeBuyPrefixHeader_pch */

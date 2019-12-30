@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="ImageAndGoodsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvW-rb-ldm">
+                        <rect key="frame" x="20" y="30" width="280" height="310"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G08-df-BdF">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="mM9-e6-1lu"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LL5-js-S0T">
+                                <rect key="frame" x="0.0" y="132" width="280" height="178"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="st4-qT-aJS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G08-df-BdF" firstAttribute="top" secondItem="BvW-rb-ldm" secondAttribute="top" id="FeF-Xg-8dQ"/>
+                            <constraint firstAttribute="trailing" secondItem="G08-df-BdF" secondAttribute="trailing" id="Gmy-a8-PT0"/>
+                            <constraint firstItem="G08-df-BdF" firstAttribute="leading" secondItem="BvW-rb-ldm" secondAttribute="leading" id="LZY-fb-0Sg"/>
+                            <constraint firstAttribute="bottom" secondItem="LL5-js-S0T" secondAttribute="bottom" id="lSa-cy-RRW"/>
+                            <constraint firstItem="LL5-js-S0T" firstAttribute="leading" secondItem="BvW-rb-ldm" secondAttribute="leading" id="ryK-Yi-Kuz"/>
+                            <constraint firstAttribute="trailing" secondItem="LL5-js-S0T" secondAttribute="trailing" id="uV8-zP-tuz"/>
+                            <constraint firstItem="LL5-js-S0T" firstAttribute="top" secondItem="G08-df-BdF" secondAttribute="bottom" id="zP0-H2-0C7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BvW-rb-ldm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="XSz-kD-M7S"/>
+                    <constraint firstItem="BvW-rb-ldm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="bcE-3a-UNX"/>
+                    <constraint firstAttribute="bottom" secondItem="BvW-rb-ldm" secondAttribute="bottom" id="hwb-nQ-Qqf"/>
+                    <constraint firstAttribute="trailing" secondItem="BvW-rb-ldm" secondAttribute="trailing" constant="20" id="o0j-vx-tDm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="collectionView" destination="LL5-js-S0T" id="ivP-hd-SOb"/>
+                <outlet property="substanceView" destination="BvW-rb-ldm" id="rVw-U8-bdQ"/>
+                <outlet property="topImageView" destination="G08-df-BdF" id="Gw3-34-8bz"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="49.553571428571423"/>
+        </tableViewCell>
+    </objects>
+</document>

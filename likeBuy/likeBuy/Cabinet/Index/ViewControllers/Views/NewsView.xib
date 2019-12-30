@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsView">
+            <connections>
+                <outlet property="contentView" destination="0YM-eI-HFe" id="KCg-FJ-yRI"/>
+                <outlet property="redView" destination="0MZ-Q7-9TK" id="0kc-7F-9ja"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0YM-eI-HFe">
+            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble-rounded" translatesAutoresizingMaskIntoConstraints="NO" id="aDs-YH-ZPx">
+                    <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MZ-Q7-9TK">
+                    <rect key="frame" x="14" y="-2" width="8" height="8"/>
+                    <color key="backgroundColor" red="1" green="0.32941176470588235" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="AaO-wU-QVV"/>
+                        <constraint firstAttribute="height" constant="8" id="sKy-T5-4oW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aDs-YH-ZPx" firstAttribute="leading" secondItem="0YM-eI-HFe" secondAttribute="leading" id="Jt4-as-6Ra"/>
+                <constraint firstItem="0MZ-Q7-9TK" firstAttribute="top" secondItem="0YM-eI-HFe" secondAttribute="top" constant="-2" id="URg-Xf-fkh"/>
+                <constraint firstItem="aDs-YH-ZPx" firstAttribute="top" secondItem="0YM-eI-HFe" secondAttribute="top" id="dw7-Rv-Pqh"/>
+                <constraint firstAttribute="trailing" secondItem="aDs-YH-ZPx" secondAttribute="trailing" id="na2-Bn-f95"/>
+                <constraint firstAttribute="trailing" secondItem="0MZ-Q7-9TK" secondAttribute="trailing" id="x8w-nQ-Eii"/>
+                <constraint firstAttribute="bottom" secondItem="aDs-YH-ZPx" secondAttribute="bottom" id="xUh-hG-tL0"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="kR1-uG-jM4"/>
+            <point key="canvasLocation" x="163.768115942029" y="50.223214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bubble-rounded" width="20" height="20"/>
+    </resources>
+</document>
